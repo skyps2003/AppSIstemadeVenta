@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ProductService } from './api/product.service';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,20 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'AppWeb';
+  product: any = {};
+
+	constructor(
+		private productService:ProductService
+	) {}
+
+	ngOnInit() {
+		this.productService.getData().subscribe({
+			next: (response: any) => {
+				this.product = response;
+			},
+			error: (error: any) => {
+				console.log(error);
+			}
+		});
+	}
 }

@@ -1,0 +1,81 @@
+/* app.component.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Botón para agregar */
+.btn-add {
+    display: block;
+    margin: 20px auto;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+}
+
+/* Botón de Editar */
+.btn-edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Botón de Eliminar */
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+th {
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+    color: #555;
+}
